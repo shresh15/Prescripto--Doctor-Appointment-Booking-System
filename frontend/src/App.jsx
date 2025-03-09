@@ -4,13 +4,16 @@ import { Route, Routes } from "react-router-dom";
 import MyProfile from "./pages/MyProfile";
 import MyAppointments from "./pages/MyAppointments";
 import Appointment from "./pages/Appointment";
-
+import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Doctor from "./pages/doctor";
+import Doctor from "./pages/Doctor";
 import Login from "./pages/login";
+import Navbar from "./components/Navbar";
 const App = () => {
   return (
     <div className="mx-4 sm:mx-[10%]">
+      <Navbar />
+      {/* visible on all the pages- the Navbar */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/doctors" element={<Doctor />} />
